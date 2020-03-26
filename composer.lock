@@ -4071,6 +4071,7 @@
             },
             "require": {
                 "facade/ignition-contracts": "^1.0",
+                "nunomaduro/larastan": "^0.5",
                 "filp/whoops": "^2.4",
                 "jakub-onderka/php-console-highlighter": "^0.4",
                 "php": "^7.2.5",
@@ -4082,7 +4083,6 @@
                 "fruitcake/laravel-cors": "^1.0",
                 "laravel/framework": "^7.0",
                 "laravel/tinker": "^2.0",
-                "nunomaduro/larastan": "^0.5",
                 "orchestra/testbench": "^5.0",
                 "phpstan/phpstan": "^0.12.3",
                 "phpunit/phpunit": "^8.5.1 || ^9.0"
