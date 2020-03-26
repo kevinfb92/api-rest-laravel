@@ -2,7 +2,7 @@ runtime: php72
 
 env_variables:
   ## Put production environment variables here.
-  APP_KEY: base64:+H0uNV3CPKAuZRZYZ0u9p1yufvNW8zmvVu6AiLcn3Es=
+  APP_KEY: base64:pbMsM9uGADz3NqIefI9+XwszdpFJ5WXq/Q+nsBmZx/A=
   APP_STORAGE: /tmp
   VIEW_COMPILED_PATH: /tmp
   SESSION_DRIVER: cookie
