@@ -16,3 +16,12 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/log/{message}', function ($message) {
+    Log::info("Hello my log, message: $message");
+    return view('welcome');
+});
+
+Route::get('/exception/{message}', function ($message) {
+    throw new Exception("Intentional exception, message: $message");
+});
