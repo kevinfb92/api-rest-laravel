@@ -16,3 +16,16 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/pruebas', 'Pruebas@index');
+
+
+Route::get('/test', 'Pruebas@testORM');
+
+//Test routes
+Route::get('/usuario/pruebas', 'UserController@pruebas');
+Route::get('/video/pruebas', 'VideoController@pruebas');
+
+//Production routes
+Route::post('/user/register', 'UserController@register');
+Route::post('/user/login', 'UserController@login');
