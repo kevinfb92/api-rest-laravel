@@ -29,3 +29,4 @@ Route::get('/video/pruebas', 'VideoController@pruebas');
 //Production routes
 Route::post('/user/register', 'UserController@register');
 Route::post('/user/login', 'UserController@login');
+Route::put('/user/update', 'UserController@update');
