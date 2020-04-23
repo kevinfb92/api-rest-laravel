@@ -42,7 +42,7 @@ class UserController extends Controller {
                 //validacion pasada correctamente
 
                 
-                //cifrar contraseña
+                //cifrar contraseï¿½a
                 $pwd = hash('sha256', $params->password);
                 
                 //crear usuario               
@@ -137,7 +137,6 @@ class UserController extends Controller {
             unset($params_array['password']);
             unset($params_array['created_at']);
             unset($params_array['remember_token']);
-            
             //update user
             $user_update = User::where('id', $user->sub)->update($params_array);
             
@@ -146,7 +145,8 @@ class UserController extends Controller {
            $data = array(
                 'code'      => 200,
                 'status'    => 'success',
-                'user'   => $user_update
+                'user'      => $user,
+                'changes'   => $params_array
             );              
         }
         else{           
@@ -159,6 +159,27 @@ class UserController extends Controller {
         
         return response()->json($data, $data['code']);
         
+    }
+    
+    public function detail($id){
+        $user = User::find($id);
+        
+        if(is_object($user)){
+            $data = array(
+                'code'  => 200,
+                'status'=> 'success',
+                'message'=> $user
+            );
+        }
+        else{
+             $data = array(
+                'code'  => 400,
+                'status'=> 'error',
+                'message'=> 'El usuario no existe'
+            );           
+        }
+        
+        return $data;
     }
 
 }
