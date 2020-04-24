@@ -69,6 +69,7 @@ class UserController extends Controller {
               'status' => 'error',
               'code' => 404,
               'message' => 'Los datos enviados no tienen el formato correcto',
+              'json' => $request->input('json')
             );          
         }
 
@@ -101,7 +102,7 @@ class UserController extends Controller {
             $pwd = hash('sha256', $params->password);
             $signIn = $jwtAuth->signIn($params->email, $pwd);
             
-            if(isset($params->getToken)){
+            if(isset($params->gettoken)){
                 $signIn = $jwtAuth->signIn($params->email, $pwd, true);           
             }
         }
