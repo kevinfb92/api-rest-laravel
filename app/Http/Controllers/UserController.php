@@ -143,11 +143,12 @@ class UserController extends Controller {
             
             //return array with the results
             
+            $user = User::find($user->sub);
+            
            $data = array(
                 'code'      => 200,
                 'status'    => 'success',
-                'user'      => $user,
-                'changes'   => $params_array
+                'user'      => $user
             );              
         }
         else{           

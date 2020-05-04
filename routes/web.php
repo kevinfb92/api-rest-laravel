@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Middleware\ApiAuthMiddleware;
 
 /*
 |--------------------------------------------------------------------------
@@ -23,11 +24,12 @@ Route::get('/pruebas', 'Pruebas@index');
 Route::get('/test', 'Pruebas@testORM');
 
 //Test routes
-Route::get('/usuario/pruebas', 'UserController@pruebas');
-Route::get('/video/pruebas', 'VideoController@pruebas');
 
 //Production routes
 Route::post('/user/register', 'UserController@register');
 Route::post('/user/login', 'UserController@login');
 Route::put('/user/update', 'UserController@update');
 Route::get('/user/detail/{id}', 'UserController@detail');
+Route::post('/video/create', 'VideoController@create')->middleware(ApiAuthMiddleware::class);
+Route::get('/video', 'VideoController@listAll');
+Route::get('/video/detail/{id}', 'VideoController@detail');
