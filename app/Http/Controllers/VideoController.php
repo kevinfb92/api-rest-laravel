@@ -156,6 +156,7 @@ class VideoController extends Controller
     
     public function listAll(Request $request){
         $token = $request->header('Authorization');
+        $jwtAuth = new \JwtAuth();
         $user = $jwtAuth->checkToken($token, true);
         $id = $user->sub;
         $videos = Video::where('user_id', $id)->orderBy('id', 'desc')->paginate(5);

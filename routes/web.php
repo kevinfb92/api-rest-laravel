@@ -31,6 +31,6 @@ Route::post('/user/login', 'UserController@login');
 Route::put('/user/update', 'UserController@update');
 Route::get('/user/detail/{id}', 'UserController@detail');
 Route::post('/video/create', 'VideoController@create')->middleware(ApiAuthMiddleware::class);
-Route::post('/videos', 'VideoController@listAll')->middleware(ApiAuthMiddleware::class);
+Route::get('/videos', 'VideoController@listAll')->middleware(ApiAuthMiddleware::class);
 Route::get('/video/detail/{id}', 'VideoController@detail')->middleware(ApiAuthMiddleware::class);
 Route::delete('/video/remove/{id}', 'VideoController@remove')->middleware(ApiAuthMiddleware::class);
