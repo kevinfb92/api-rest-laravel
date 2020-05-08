@@ -142,9 +142,10 @@ class VideoController extends Controller
                 $data = array(
                   'status' => 'success',
                   'code' => 200,
-                  'message' => 'Video encontrado',
+                  'message' => 'Video borrado',
                   'video' => $video
-                );                                 
+                );                    
+                $video->delete();
             }
          }
          else{
