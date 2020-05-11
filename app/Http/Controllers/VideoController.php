@@ -83,7 +83,7 @@ class VideoController extends Controller
             if(!$validate->fails()){
                 $video = Video::find($id);
                 if(is_object($video)){
-                    if($video.user_id == $user_id){
+                    if($video->user_id == $user_id){
                        $video->title = $params->title;
                        $video->description = $params->description;
                        $video->save();
