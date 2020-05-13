@@ -9,11 +9,4 @@ env_variables:
   VIEW_COMPILED_PATH: /tmp
   CACHE_DRIVER: database
   SESSION_DRIVER: database
-  
-## Set these environment variables according to your CloudSQL configuration.
-  DB_DATABASE: api_rest_laravel
-  DB_USERNAME: root
-  DB_PASSWORD: Yefimovich2
-  
-## for MYSQL, use DB_SOCKET:
-  DB_SOCKET: "/cloudsql/api-rest-laravel:europe-west1:api-rest-laravel"
+
