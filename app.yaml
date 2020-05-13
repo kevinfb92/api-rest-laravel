@@ -1,7 +1,6 @@
 runtime: php72 # Replace with php73 to use the PHP 7.3 runtime
 
 ## Put production environment variables here.
-APP_KEY: YOUR_APP_KEY
 APP_STORAGE: /tmp
 VIEW_COMPILED_PATH: /tmp
 SESSION_DRIVER: cookie
