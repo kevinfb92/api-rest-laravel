@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "16297d91ad0548d54a263d16b0a0a7b6",
+    "content-hash": "658943c8dc88e78cd5c4f340f8f85ca2",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -680,6 +680,50 @@
             "time": "2020-02-13T22:36:52+00:00"
         },
         {
+            "name": "facade/ignition-contracts",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/facade/ignition-contracts.git",
+                "reference": "f445db0fb86f48e205787b2592840dd9c80ded28"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/facade/ignition-contracts/zipball/f445db0fb86f48e205787b2592840dd9c80ded28",
+                "reference": "f445db0fb86f48e205787b2592840dd9c80ded28",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.1"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Facade\\IgnitionContracts\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Freek Van der Herten",
+                    "email": "freek@spatie.be",
+                    "homepage": "https://flareapp.io",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Solution contracts for Ignition",
+            "homepage": "https://github.com/facade/ignition-contracts",
+            "keywords": [
+                "contracts",
+                "flare",
+                "ignition"
+            ],
+            "time": "2019-08-30T14:06:08+00:00"
+        },
+        {
             "name": "fideloper/proxy",
             "version": "4.3.0",
             "source": {
@@ -732,6 +776,67 @@
                 "trusted proxy"
             ],
             "time": "2020-02-22T01:51:47+00:00"
+        },
+        {
+            "name": "filp/whoops",
+            "version": "2.7.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/filp/whoops.git",
+                "reference": "fff6f1e4f36be0e0d0b84d66b413d9dcb0c49130"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/filp/whoops/zipball/fff6f1e4f36be0e0d0b84d66b413d9dcb0c49130",
+                "reference": "fff6f1e4f36be0e0d0b84d66b413d9dcb0c49130",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^5.5.9 || ^7.0",
+                "psr/log": "^1.0.1"
+            },
+            "require-dev": {
+                "mockery/mockery": "^0.9 || ^1.0",
+                "phpunit/phpunit": "^4.8.35 || ^5.7 || ^6.0",
+                "symfony/var-dumper": "^2.6 || ^3.0 || ^4.0 || ^5.0"
+            },
+            "suggest": {
+                "symfony/var-dumper": "Pretty print complex values better with var-dumper available",
+                "whoops/soap": "Formats errors as SOAP responses"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.6-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Whoops\\": "src/Whoops/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Filipe Dobreira",
+                    "homepage": "https://github.com/filp",
+                    "role": "Developer"
+                }
+            ],
+            "description": "php error handling for cool kids",
+            "homepage": "https://filp.github.io/whoops/",
+            "keywords": [
+                "error",
+                "exception",
+                "handling",
+                "library",
+                "throwable",
+                "whoops"
+            ],
+            "time": "2020-01-15T10:00:00+00:00"
         },
         {
             "name": "firebase/php-jwt",
@@ -1190,16 +1295,16 @@
         },
         {
             "name": "google/protobuf",
-            "version": "v3.11.4",
+            "version": "v3.19.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/protocolbuffers/protobuf-php.git",
-                "reference": "a5001eb559dcaac0bf6d8c7edc52b3828c618185"
+                "reference": "6f0a54186f133aff98f49d0f36a32d4a4f7d4cbd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/protocolbuffers/protobuf-php/zipball/a5001eb559dcaac0bf6d8c7edc52b3828c618185",
-                "reference": "a5001eb559dcaac0bf6d8c7edc52b3828c618185",
+                "url": "https://api.github.com/repos/protocolbuffers/protobuf-php/zipball/6f0a54186f133aff98f49d0f36a32d4a4f7d4cbd",
+                "reference": "6f0a54186f133aff98f49d0f36a32d4a4f7d4cbd",
                 "shasum": ""
             },
             "require": {
@@ -1227,7 +1332,11 @@
             "keywords": [
                 "proto"
             ],
-            "time": "2020-02-14T22:17:05+00:00"
+            "support": {
+                "issues": "https://github.com/protocolbuffers/protobuf-php/issues",
+                "source": "https://github.com/protocolbuffers/protobuf-php/tree/v3.19.4"
+            },
+            "time": "2022-01-28T17:23:32+00:00"
         },
         {
             "name": "grpc/grpc",
@@ -2216,6 +2325,76 @@
                 "php"
             ],
             "time": "2020-04-10T16:34:50+00:00"
+        },
+        {
+            "name": "nunomaduro/collision",
+            "version": "v4.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nunomaduro/collision.git",
+                "reference": "d50490417eded97be300a92cd7df7badc37a9018"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nunomaduro/collision/zipball/d50490417eded97be300a92cd7df7badc37a9018",
+                "reference": "d50490417eded97be300a92cd7df7badc37a9018",
+                "shasum": ""
+            },
+            "require": {
+                "facade/ignition-contracts": "^1.0",
+                "filp/whoops": "^2.4",
+                "php": "^7.2.5",
+                "symfony/console": "^5.0"
+            },
+            "require-dev": {
+                "facade/ignition": "^2.0",
+                "fideloper/proxy": "^4.2",
+                "friendsofphp/php-cs-fixer": "^2.16",
+                "fruitcake/laravel-cors": "^1.0",
+                "laravel/framework": "^7.0",
+                "laravel/tinker": "^2.0",
+                "nunomaduro/larastan": "^0.5",
+                "orchestra/testbench": "^5.0",
+                "phpstan/phpstan": "^0.12.3",
+                "phpunit/phpunit": "^8.5.1 || ^9.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "NunoMaduro\\Collision\\Adapters\\Laravel\\CollisionServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "NunoMaduro\\Collision\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nuno Maduro",
+                    "email": "enunomaduro@gmail.com"
+                }
+            ],
+            "description": "Cli error handling for console/command-line PHP applications.",
+            "keywords": [
+                "artisan",
+                "cli",
+                "command-line",
+                "console",
+                "error",
+                "handling",
+                "laravel",
+                "laravel-zero",
+                "php",
+                "symfony"
+            ],
+            "time": "2020-04-04T19:56:08+00:00"
         },
         {
             "name": "nunomaduro/larastan",
@@ -4775,111 +4954,6 @@
             "time": "2019-10-21T16:45:58+00:00"
         },
         {
-            "name": "facade/ignition-contracts",
-            "version": "1.0.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/facade/ignition-contracts.git",
-                "reference": "f445db0fb86f48e205787b2592840dd9c80ded28"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/facade/ignition-contracts/zipball/f445db0fb86f48e205787b2592840dd9c80ded28",
-                "reference": "f445db0fb86f48e205787b2592840dd9c80ded28",
-                "shasum": ""
-            },
-            "require": {
-                "php": "^7.1"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Facade\\IgnitionContracts\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Freek Van der Herten",
-                    "email": "freek@spatie.be",
-                    "homepage": "https://flareapp.io",
-                    "role": "Developer"
-                }
-            ],
-            "description": "Solution contracts for Ignition",
-            "homepage": "https://github.com/facade/ignition-contracts",
-            "keywords": [
-                "contracts",
-                "flare",
-                "ignition"
-            ],
-            "time": "2019-08-30T14:06:08+00:00"
-        },
-        {
-            "name": "filp/whoops",
-            "version": "2.7.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/filp/whoops.git",
-                "reference": "fff6f1e4f36be0e0d0b84d66b413d9dcb0c49130"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/filp/whoops/zipball/fff6f1e4f36be0e0d0b84d66b413d9dcb0c49130",
-                "reference": "fff6f1e4f36be0e0d0b84d66b413d9dcb0c49130",
-                "shasum": ""
-            },
-            "require": {
-                "php": "^5.5.9 || ^7.0",
-                "psr/log": "^1.0.1"
-            },
-            "require-dev": {
-                "mockery/mockery": "^0.9 || ^1.0",
-                "phpunit/phpunit": "^4.8.35 || ^5.7 || ^6.0",
-                "symfony/var-dumper": "^2.6 || ^3.0 || ^4.0 || ^5.0"
-            },
-            "suggest": {
-                "symfony/var-dumper": "Pretty print complex values better with var-dumper available",
-                "whoops/soap": "Formats errors as SOAP responses"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "2.6-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Whoops\\": "src/Whoops/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Filipe Dobreira",
-                    "homepage": "https://github.com/filp",
-                    "role": "Developer"
-                }
-            ],
-            "description": "php error handling for cool kids",
-            "homepage": "https://filp.github.io/whoops/",
-            "keywords": [
-                "error",
-                "exception",
-                "handling",
-                "library",
-                "throwable",
-                "whoops"
-            ],
-            "time": "2020-01-15T10:00:00+00:00"
-        },
-        {
             "name": "fzaninotto/faker",
             "version": "v1.9.1",
             "source": {
@@ -4976,76 +5050,6 @@
                 "object graph"
             ],
             "time": "2020-01-17T21:11:47+00:00"
-        },
-        {
-            "name": "nunomaduro/collision",
-            "version": "v4.2.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/nunomaduro/collision.git",
-                "reference": "d50490417eded97be300a92cd7df7badc37a9018"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/nunomaduro/collision/zipball/d50490417eded97be300a92cd7df7badc37a9018",
-                "reference": "d50490417eded97be300a92cd7df7badc37a9018",
-                "shasum": ""
-            },
-            "require": {
-                "facade/ignition-contracts": "^1.0",
-                "filp/whoops": "^2.4",
-                "php": "^7.2.5",
-                "symfony/console": "^5.0"
-            },
-            "require-dev": {
-                "facade/ignition": "^2.0",
-                "fideloper/proxy": "^4.2",
-                "friendsofphp/php-cs-fixer": "^2.16",
-                "fruitcake/laravel-cors": "^1.0",
-                "laravel/framework": "^7.0",
-                "laravel/tinker": "^2.0",
-                "nunomaduro/larastan": "^0.5",
-                "orchestra/testbench": "^5.0",
-                "phpstan/phpstan": "^0.12.3",
-                "phpunit/phpunit": "^8.5.1 || ^9.0"
-            },
-            "type": "library",
-            "extra": {
-                "laravel": {
-                    "providers": [
-                        "NunoMaduro\\Collision\\Adapters\\Laravel\\CollisionServiceProvider"
-                    ]
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "NunoMaduro\\Collision\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Nuno Maduro",
-                    "email": "enunomaduro@gmail.com"
-                }
-            ],
-            "description": "Cli error handling for console/command-line PHP applications.",
-            "keywords": [
-                "artisan",
-                "cli",
-                "command-line",
-                "console",
-                "error",
-                "handling",
-                "laravel",
-                "laravel-zero",
-                "php",
-                "symfony"
-            ],
-            "time": "2020-04-04T19:56:08+00:00"
         },
         {
             "name": "phar-io/manifest",
@@ -6407,5 +6411,6 @@
     "platform": {
         "php": "^7.2.5"
     },
-    "platform-dev": []
+    "platform-dev": [],
+    "plugin-api-version": "2.2.0"
 }
